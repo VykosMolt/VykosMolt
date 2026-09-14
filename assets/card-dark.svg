@@ -1,4 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="629" viewBox="0 0 880 629" role="img" aria-label="Jan Kirin — profile card" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" xml:space="preserve">
+<style>
+.fr{opacity:0}.fr1{opacity:1}.fr{animation:cyc 20s infinite}
+@keyframes cyc{0%{opacity:0}2.00%{opacity:1}23.00%{opacity:1}25.00%{opacity:0}100%{opacity:0}}
+.fr1{animation-delay:0s}
+.fr2{animation-delay:5s}
+.fr3{animation-delay:10s}
+.fr4{animation-delay:15s}
+</style>
+<g class="fr fr1">
+<text x="22" y="39.0" fill="#39c5cf">      +--------------+</text>
+<text x="22" y="65.3" fill="#39c5cf">  +--&gt;|   layer  1   |</text>
+<text x="22" y="91.7" fill="#39c5cf">  |   +------+-------+</text>
+<text x="22" y="118.0" fill="#39c5cf">  |          v</text>
+<text x="22" y="144.4" fill="#39c5cf">  |   +--------------+</text>
+<text x="22" y="170.7" fill="#39c5cf">  |   |   layer  2   |</text>
+<text x="22" y="197.1" fill="#39c5cf">  |   +------+-------+</text>
+<text x="22" y="223.4" fill="#39c5cf">  |          v</text>
+<text x="22" y="249.8" fill="#39c5cf">  |   +--------------+</text>
+<text x="22" y="276.1" fill="#39c5cf">  |   |   layer  3   |</text>
+<text x="22" y="302.5" fill="#39c5cf">  |   +------+-------+</text>
+<text x="22" y="328.9" fill="#39c5cf">  |          v</text>
+<text x="22" y="355.2" fill="#39c5cf">  |   +--------------+</text>
+<text x="22" y="381.6" fill="#39c5cf">  |   |   layer  4   |</text>
+<text x="22" y="407.9" fill="#39c5cf">  |   +------+-------+</text>
+<text x="22" y="434.3" fill="#39c5cf">  |          |</text>
+<text x="22" y="460.6" fill="#39c5cf">  +----------+</text>
+<text x="22" y="487.0" fill="#39c5cf">       h_t -&gt; h_t+1</text>
+</g>
+<g class="fr fr2">
 <text x="22" y="39.0" fill="#39c5cf"> +   +---+---+   +---+---+   +</text>
 <text x="22" y="65.3" fill="#39c5cf"> |   |       |   |       |   |</text>
 <text x="22" y="91.7" fill="#39c5cf"> |   |       |   |       |   |</text>
@@ -21,6 +50,49 @@
 <text x="22" y="539.7" fill="#39c5cf"> |   |   |   |   |   |   |   |</text>
 <text x="22" y="566.0" fill="#39c5cf"> |   |   |   |   |   |   |   |</text>
 <text x="22" y="592.4" fill="#39c5cf"> +---+   +---+   +---+   +---+</text>
+</g>
+<g class="fr fr3">
+<text x="22" y="39.0" fill="#39c5cf">            ooooooo.</text>
+<text x="22" y="65.3" fill="#39c5cf">         oooo     oooo.</text>
+<text x="22" y="91.7" fill="#39c5cf">       ooo........   ooo.</text>
+<text x="22" y="118.0" fill="#39c5cf">     ooo.        ...   ooo.</text>
+<text x="22" y="144.4" fill="#39c5cf">    oo.........    .     oo.</text>
+<text x="22" y="170.7" fill="#39c5cf">    o...      ...   .     o..</text>
+<text x="22" y="197.1" fill="#39c5cf">   oo..         ..  .     oo..</text>
+<text x="22" y="223.4" fill="#39c5cf">   o.            .  .      o..</text>
+<text x="22" y="249.8" fill="#39c5cf">  oo.            .  .      oo.</text>
+<text x="22" y="276.1" fill="#39c5cf">  o.             . ..       o.</text>
+<text x="22" y="302.5" fill="#39c5cf">  o.                        o</text>
+<text x="22" y="328.9" fill="#39c5cf">  oo                       oo</text>
+<text x="22" y="355.2" fill="#39c5cf">   o                       o</text>
+<text x="22" y="381.6" fill="#39c5cf">   oo                     oo</text>
+<text x="22" y="407.9" fill="#39c5cf">    o.                    o</text>
+<text x="22" y="434.3" fill="#39c5cf">    oo.                  oo</text>
+<text x="22" y="460.6" fill="#39c5cf">     ooo               ooo</text>
+<text x="22" y="487.0" fill="#39c5cf">       ooo           ooo</text>
+<text x="22" y="513.3" fill="#39c5cf">         oooo     oooo</text>
+<text x="22" y="539.7" fill="#39c5cf">            ooooooo</text>
+</g>
+<g class="fr fr4">
+<text x="22" y="39.0" fill="#39c5cf">              ==;====</text>
+<text x="22" y="65.3" fill="#39c5cf">            =::::;;;;;=</text>
+<text x="22" y="91.7" fill="#39c5cf">           ;~~~~:::;;;;=</text>
+<text x="22" y="118.0" fill="#39c5cf">          =~~~~~:::::::;</text>
+<text x="22" y="144.4" fill="#39c5cf">          ~~---~~::::::::</text>
+<text x="22" y="170.7" fill="#39c5cf">         ;~-,,,-~::::::::</text>
+<text x="22" y="197.1" fill="#39c5cf">         :-,,..-:::::~~~:</text>
+<text x="22" y="223.4" fill="#39c5cf">         ~---,, ::::~~~~~:</text>
+<text x="22" y="249.8" fill="#39c5cf">         ::::;  ;:::~~~~~~</text>
+<text x="22" y="276.1" fill="#39c5cf">         :;;=!! ;::~~~~~~~</text>
+<text x="22" y="302.5" fill="#39c5cf">         :;=!*#!;::~~~~~~</text>
+<text x="22" y="328.9" fill="#39c5cf">         :;=!*!=;:~~~~~--</text>
+<text x="22" y="355.2" fill="#39c5cf">         ~:;===;:~~~-----</text>
+<text x="22" y="381.6" fill="#39c5cf">          ~:;;::~~~-----</text>
+<text x="22" y="407.9" fill="#39c5cf">          ~:~~~~~~-----,</text>
+<text x="22" y="434.3" fill="#39c5cf">           -~~~~----,,,</text>
+<text x="22" y="460.6" fill="#39c5cf">            -----,,,,,</text>
+<text x="22" y="487.0" fill="#39c5cf">              ,,,,..</text>
+</g>
 <text x="368.8" y="49.5" fill="#39c5cf" font-weight="600">jan@github</text>
 <line x1="491.2" y1="43.8" x2="858.4" y2="43.8" stroke="#30363d" stroke-width="1.5"/>
 <text x="368.8" y="75.9" fill="#e3b341">Role</text>

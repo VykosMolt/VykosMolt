@@ -85,9 +85,12 @@ def check(art, art_cols):
             raise SystemExit(f"art line {i} exceeds measured width")
 
 
-def build(art, theme):
+SECONDS_PER_FRAME = 5
+
+def build(arts, theme):
     c = THEMES[theme]
-    art_w = max((len(l) for l in art), default=0)
+    art_w = max((len(l) for a in arts for l in a), default=0)
+    art_h = max((len(a) for a in arts), default=0)
     total = art_w + (GAP if art_w else 0) + COLS
     W = round(PAD * 2 + total * ADV)
 
@@ -97,18 +100,40 @@ def build(art, theme):
 
     rows = sum(1 for r in PANEL if r[0] != "s") + 0.5 * sum(1 for r in PANEL if r[0] == "s")
     rows += sum(1 for r in PANEL if r[0] == "h") * 0.4   # breathing room over headers
-    H = round(PAD * 2 + max(len(art), rows) * LH)
+    H = round(PAD * 2 + max(art_h, rows) * LH)
 
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
          f'viewBox="0 0 {W} {H}" role="img" aria-label="Jan Kirin — profile card" '
          f'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" '
          f'font-size="{FS}" xml:space="preserve">']
 
-    y = PAD + FS
-    for line in art:
-        if line.strip():
-            o.append(f'<text x="{art_x}" y="{y:.1f}" fill="{c["art"]}">{escape(line)}</text>')
-        y += LH
+    n = len(arts)
+    if n > 1:
+        total_s = n * SECONDS_PER_FRAME
+        share   = 100.0 / n
+        fade    = min(2.0, share * 0.12)
+        o.append("<style>")
+        # frame 1 stays lit if the renderer ignores animation
+        o.append(".fr{opacity:0}.fr1{opacity:1}"
+                 f".fr{{animation:cyc {total_s}s infinite}}")
+        o.append("@keyframes cyc{"
+                 "0%{opacity:0}"
+                 f"{fade:.2f}%{{opacity:1}}"
+                 f"{share - fade:.2f}%{{opacity:1}}"
+                 f"{share:.2f}%{{opacity:0}}"
+                 "100%{opacity:0}}")
+        for i in range(n):
+            o.append(f".fr{i+1}{{animation-delay:{i * SECONDS_PER_FRAME}s}}")
+        o.append("</style>")
+
+    for i, art in enumerate(arts):
+        o.append(f'<g class="fr fr{i+1}">' if n > 1 else "<g>")
+        y = PAD + FS
+        for line in art:
+            if line.strip():
+                o.append(f'<text x="{art_x}" y="{y:.1f}" fill="{c["art"]}">{escape(line)}</text>')
+            y += LH
+        o.append("</g>")
 
     y = PAD + FS
     for row in PANEL:
@@ -143,13 +168,17 @@ def build(art, theme):
 
 if __name__ == "__main__":
     import sys
-    name = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_ART
-    art = load_art(name)
-    art_cols = max((len(l) for l in art), default=0)
-    check(art, art_cols)
+    names = sys.argv[1:] or [DEFAULT_ART]
+    if names == ["rotate"]:
+        names = sorted(q.stem for q in (HERE / "art").glob("*.txt"))
+    arts = [load_art(n) for n in names]
+    art_cols = max((len(l) for a in arts for l in a), default=0)
+    for a in arts:
+        check(a, art_cols)
+    name = " + ".join(names)
     digests = {}
     for theme in THEMES:
-        svg, W, H, total = build(art, theme)
+        svg, W, H, total = build(arts, theme)
         (HERE / f"card-{theme}.svg").write_text(svg)
         digests[theme] = hashlib.sha256(svg.encode()).hexdigest()[:8]
 
@@ -163,7 +192,8 @@ if __name__ == "__main__":
     readme.write_text(txt)
     print("  cache-bust " + "  ".join(f"{t}=?v={d}" for t, d in digests.items()))
     px = 890 / total
-    print(f"  art      {name}: {art_cols} cols x {len(art)} rows")
+    print(f"  art      {name}")
+    print(f"           {art_cols} cols x {max(len(a) for a in arts)} rows" + (f", {len(arts)} frames @ {SECONDS_PER_FRAME}s" if len(arts) > 1 else ""))
     print(f"  panel    {COLS} cols")
     print(f"  total    {total} cols  ->  {W}x{H}px")
     print(f"  renders  ~{px:.1f}px/char in GitHub's ~890px column "
