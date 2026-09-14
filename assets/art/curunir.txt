@@ -1,0 +1,15 @@
+        .---------.
+        |  claim  |
+        '----+----'
+             |
+   .---------+---------.
+   |         |         |
+observed   stated   inferred
+   |         |         |
+ src:A     src:B     A ^ B
+   |         |         |
+ ledger    ledger    derived
+   '---------+---------'
+             |
+      basis complete
+    no claim outruns it

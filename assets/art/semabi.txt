@@ -1,0 +1,13 @@
+ .------.  click   .------.
+ | home |--------->| list |
+ '---+--'          '---+--'
+     |                 |
+  submit           select
+     v                 v
+ .------.   back   .------.
+ | form |<---------| item |
+ '------'          '------'
+
+ states 4     edges 5
+ verbs  click submit select
+ no source  no api  no docs
