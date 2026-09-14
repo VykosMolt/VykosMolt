@@ -85,7 +85,7 @@ def check(art, art_cols):
             raise SystemExit(f"art line {i} exceeds measured width")
 
 
-SECONDS_PER_FRAME = 4
+SECONDS_PER_FRAME = 5
 
 def build(arts, theme):
     c = THEMES[theme]
