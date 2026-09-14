@@ -1,13 +1,3 @@
-<table>
-<tr>
-<td width="38%" valign="top">
-
-<pre>
-</pre>
-
-</td>
-<td width="62%" valign="top">
-
 <pre>
 jan@github
 ────────────────────────────────────────
@@ -35,10 +25,6 @@ LinkedIn ........ profile
 Scholar ......... profile
 arXiv ........... papers
 </pre>
-
-</td>
-</tr>
-</table>
 
 <p align="center">
   <a href="mailto:vykos@tutamail.com">Email</a>
