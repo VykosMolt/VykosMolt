@@ -51,7 +51,7 @@ ADV  = 0.600 * FS  # monospace advance width
 LH   = 1.55 * FS   # line height
 PAD  = 22          # outer padding, px
 GAP  = 4           # columns between art and panel
-COLS = 48          # panel width, in columns
+COLS = 44          # panel width, in columns
 
 THEMES = {
     "dark":  dict(art="#39c5cf", head="#39c5cf", key="#e3b341",
@@ -61,7 +61,7 @@ THEMES = {
 }
 
 
-DEFAULT_ART = "block"
+DEFAULT_ART = "looped"
 
 def load_art(name):
     p = HERE / "art" / f"{name}.txt"
