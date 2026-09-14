@@ -1,30 +1,9 @@
-<pre>
-jan@github
-────────────────────────────────────────
-Role ............ ML Researcher / SWE
-OS .............. Arch Linux
-WM .............. Hyprland
-Host ............ Lenovo Legion Pro 5
-Editor .......... Neovim
-Languages ....... Python · C++
-Research ........ Looped / recurrent LMs
-                  Interpretability
-                  Agent learning
-
-Selected
-────────────────────────────────────────
-SemABI .......... Semantic interface induction
-OPI ............. Proto-introspection in looped LMs
-Curunír ......... Evidence-grounded intelligence
-
-Contact
-────────────────────────────────────────
-Email ........... vykos@tutamail.com
-GitHub .......... @VykosMolt
-LinkedIn ........ profile
-Scholar ......... profile
-arXiv ........... papers
-</pre>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/card-dark.svg">
+    <img src="assets/card-light.svg" alt="Jan Kirin — ML researcher / SWE. Arch Linux, Hyprland, Neovim. Research: looped and recurrent language models, interpretability, agent learning. Selected work: SemABI, Operational Proto-Introspection, Curunír." width="880">
+  </picture>
+</p>
 
 <p align="center">
   <a href="mailto:vykos@tutamail.com">Email</a>

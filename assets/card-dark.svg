@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="772" viewBox="0 0 880 772" role="img" aria-label="Jan Kirin - profile card" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="19">
+<text x="26" y="45" fill="#e6edf3" font-weight="600">jan@github</text>
+<line x1="26" y1="62" x2="854" y2="62" stroke="#30363d" stroke-width="1.5"/>
+<text x="26" y="105" fill="#7d8590">Role .............</text>
+<text x="231" y="105" fill="#e6edf3">ML Researcher / SWE</text>
+<text x="26" y="135" fill="#7d8590">OS ...............</text>
+<text x="231" y="135" fill="#e6edf3">Arch Linux</text>
+<text x="26" y="165" fill="#7d8590">WM ...............</text>
+<text x="231" y="165" fill="#e6edf3">Hyprland</text>
+<text x="26" y="195" fill="#7d8590">Host .............</text>
+<text x="231" y="195" fill="#e6edf3">Lenovo Legion Pro 5</text>
+<text x="26" y="225" fill="#7d8590">Editor ...........</text>
+<text x="231" y="225" fill="#e6edf3">Neovim</text>
+<text x="26" y="255" fill="#7d8590">Languages ........</text>
+<text x="231" y="255" fill="#e6edf3">Python · C++</text>
+<text x="26" y="285" fill="#7d8590">Research .........</text>
+<text x="231" y="285" fill="#e6edf3">Looped / recurrent LMs</text>
+<text x="231" y="315" fill="#e6edf3">Interpretability</text>
+<text x="231" y="345" fill="#e6edf3">Agent learning</text>
+<text x="26" y="390" fill="#e6edf3" font-weight="600">Selected</text>
+<line x1="26" y1="407" x2="854" y2="407" stroke="#30363d" stroke-width="1.5"/>
+<text x="26" y="450" fill="#7d8590">SemABI ...........</text>
+<text x="231" y="450" fill="#e6edf3">Semantic interface induction</text>
+<text x="26" y="480" fill="#7d8590">OPI ..............</text>
+<text x="231" y="480" fill="#e6edf3">Proto-introspection in looped LMs</text>
+<text x="26" y="510" fill="#7d8590">Curunír ..........</text>
+<text x="231" y="510" fill="#e6edf3">Evidence-grounded intelligence</text>
+<text x="26" y="555" fill="#e6edf3" font-weight="600">Contact</text>
+<line x1="26" y1="572" x2="854" y2="572" stroke="#30363d" stroke-width="1.5"/>
+<text x="26" y="615" fill="#7d8590">Email ............</text>
+<text x="231" y="615" fill="#e6edf3">vykos@tutamail.com</text>
+<text x="26" y="645" fill="#7d8590">GitHub ...........</text>
+<text x="231" y="645" fill="#e6edf3">@VykosMolt</text>
+<text x="26" y="675" fill="#7d8590">LinkedIn .........</text>
+<text x="231" y="675" fill="#e6edf3">profile</text>
+<text x="26" y="705" fill="#7d8590">Scholar ..........</text>
+<text x="231" y="705" fill="#e6edf3">profile</text>
+<text x="26" y="735" fill="#7d8590">arXiv ............</text>
+<text x="231" y="735" fill="#e6edf3">papers</text>
+</svg>
