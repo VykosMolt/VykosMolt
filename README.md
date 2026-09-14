@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/card-dark.svg">
-    <img src="assets/card-light.svg" alt="Jan Kirin — ML researcher / SWE. Arch Linux, Hyprland, Neovim. Research: looped and recurrent language models, interpretability, agent learning. Selected work: SemABI, Operational Proto-Introspection, Curunír." width="880">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/card-dark.svg?v=880eebf5">
+    <img src="assets/card-light.svg?v=21033788" alt="Jan Kirin — ML researcher / SWE. Arch Linux, Hyprland, Neovim. Research: looped and recurrent language models, interpretability, agent learning. Selected work: SemABI, Operational Proto-Introspection, Curunír." width="880">
   </picture>
 </p>
 

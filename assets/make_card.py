@@ -8,6 +8,8 @@ the art is.
     python3 assets/make_card.py            # DEFAULT_ART
     python3 assets/make_card.py hilbert    # pick another
 """
+import hashlib
+import re
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -145,9 +147,21 @@ if __name__ == "__main__":
     art = load_art(name)
     art_cols = max((len(l) for l in art), default=0)
     check(art, art_cols)
+    digests = {}
     for theme in THEMES:
         svg, W, H, total = build(art, theme)
         (HERE / f"card-{theme}.svg").write_text(svg)
+        digests[theme] = hashlib.sha256(svg.encode()).hexdigest()[:8]
+
+    # GitHub's camo proxy caches by URL, so a changed SVG at an unchanged path
+    # keeps serving the old bytes. Stamp the content hash into the query.
+    readme = HERE.parent / "README.md"
+    txt = readme.read_text()
+    for theme, d in digests.items():
+        txt = re.sub(rf"assets/card-{theme}\.svg(\?v=[0-9a-f]+)?",
+                     f"assets/card-{theme}.svg?v={d}", txt)
+    readme.write_text(txt)
+    print("  cache-bust " + "  ".join(f"{t}=?v={d}" for t, d in digests.items()))
     px = 890 / total
     print(f"  art      {name}: {art_cols} cols x {len(art)} rows")
     print(f"  panel    {COLS} cols")
