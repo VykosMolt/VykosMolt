@@ -1,40 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="772" viewBox="0 0 880 772" role="img" aria-label="Jan Kirin - profile card" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="19">
-<text x="26" y="45" fill="#1f2328" font-weight="600">jan@github</text>
-<line x1="26" y1="62" x2="854" y2="62" stroke="#d1d9e0" stroke-width="1.5"/>
-<text x="26" y="105" fill="#59636e">Role .............</text>
-<text x="231" y="105" fill="#1f2328">ML Researcher / SWE</text>
-<text x="26" y="135" fill="#59636e">OS ...............</text>
-<text x="231" y="135" fill="#1f2328">Arch Linux</text>
-<text x="26" y="165" fill="#59636e">WM ...............</text>
-<text x="231" y="165" fill="#1f2328">Hyprland</text>
-<text x="26" y="195" fill="#59636e">Host .............</text>
-<text x="231" y="195" fill="#1f2328">Lenovo Legion Pro 5</text>
-<text x="26" y="225" fill="#59636e">Editor ...........</text>
-<text x="231" y="225" fill="#1f2328">Neovim</text>
-<text x="26" y="255" fill="#59636e">Languages ........</text>
-<text x="231" y="255" fill="#1f2328">Python · C++</text>
-<text x="26" y="285" fill="#59636e">Research .........</text>
-<text x="231" y="285" fill="#1f2328">Looped / recurrent LMs</text>
-<text x="231" y="315" fill="#1f2328">Interpretability</text>
-<text x="231" y="345" fill="#1f2328">Agent learning</text>
-<text x="26" y="390" fill="#1f2328" font-weight="600">Selected</text>
-<line x1="26" y1="407" x2="854" y2="407" stroke="#d1d9e0" stroke-width="1.5"/>
-<text x="26" y="450" fill="#59636e">SemABI ...........</text>
-<text x="231" y="450" fill="#1f2328">Semantic interface induction</text>
-<text x="26" y="480" fill="#59636e">OPI ..............</text>
-<text x="231" y="480" fill="#1f2328">Proto-introspection in looped LMs</text>
-<text x="26" y="510" fill="#59636e">Curunír ..........</text>
-<text x="231" y="510" fill="#1f2328">Evidence-grounded intelligence</text>
-<text x="26" y="555" fill="#1f2328" font-weight="600">Contact</text>
-<line x1="26" y1="572" x2="854" y2="572" stroke="#d1d9e0" stroke-width="1.5"/>
-<text x="26" y="615" fill="#59636e">Email ............</text>
-<text x="231" y="615" fill="#1f2328">vykos@tutamail.com</text>
-<text x="26" y="645" fill="#59636e">GitHub ...........</text>
-<text x="231" y="645" fill="#1f2328">@VykosMolt</text>
-<text x="26" y="675" fill="#59636e">LinkedIn .........</text>
-<text x="231" y="675" fill="#1f2328">profile</text>
-<text x="26" y="705" fill="#59636e">Scholar ..........</text>
-<text x="231" y="705" fill="#1f2328">profile</text>
-<text x="26" y="735" fill="#59636e">arXiv ............</text>
-<text x="231" y="735" fill="#1f2328">papers</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="799" height="629" viewBox="0 0 799 629" role="img" aria-label="Jan Kirin — profile card" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" xml:space="preserve">
+<text x="22" y="39.0" fill="#1b7c83">      +--------------+</text>
+<text x="22" y="65.3" fill="#1b7c83">  +--&gt;|   layer  1   |</text>
+<text x="22" y="91.7" fill="#1b7c83">  |   +------+-------+</text>
+<text x="22" y="118.0" fill="#1b7c83">  |          v</text>
+<text x="22" y="144.4" fill="#1b7c83">  |   +--------------+</text>
+<text x="22" y="170.7" fill="#1b7c83">  |   |   layer  2   |</text>
+<text x="22" y="197.1" fill="#1b7c83">  |   +------+-------+</text>
+<text x="22" y="223.4" fill="#1b7c83">  |          v</text>
+<text x="22" y="249.8" fill="#1b7c83">  |   +--------------+</text>
+<text x="22" y="276.1" fill="#1b7c83">  |   |   layer  3   |</text>
+<text x="22" y="302.5" fill="#1b7c83">  |   +------+-------+</text>
+<text x="22" y="328.9" fill="#1b7c83">  |          v</text>
+<text x="22" y="355.2" fill="#1b7c83">  |   +--------------+</text>
+<text x="22" y="381.6" fill="#1b7c83">  |   |   layer  4   |</text>
+<text x="22" y="407.9" fill="#1b7c83">  |   +------+-------+</text>
+<text x="22" y="434.3" fill="#1b7c83">  |          |</text>
+<text x="22" y="460.6" fill="#1b7c83">  +----------+</text>
+<text x="22" y="487.0" fill="#1b7c83">       h_t -&gt; h_t+1</text>
+<text x="287.2" y="49.5" fill="#1b7c83" font-weight="600">jan@github</text>
+<line x1="409.6" y1="43.8" x2="776.8" y2="43.8" stroke="#d1d9e0" stroke-width="1.5"/>
+<text x="287.2" y="75.9" fill="#9a6700">Role</text>
+<text x="338.2" y="75.9" fill="#d1d9e0">.......................</text>
+<text x="776.8" y="75.9" fill="#1f2328" text-anchor="end">ML Researcher / SWE</text>
+<text x="287.2" y="102.2" fill="#9a6700">OS</text>
+<text x="317.8" y="102.2" fill="#d1d9e0">..................................</text>
+<text x="776.8" y="102.2" fill="#1f2328" text-anchor="end">Arch Linux</text>
+<text x="287.2" y="128.6" fill="#9a6700">WM</text>
+<text x="317.8" y="128.6" fill="#d1d9e0">....................................</text>
+<text x="776.8" y="128.6" fill="#1f2328" text-anchor="end">Hyprland</text>
+<text x="287.2" y="154.9" fill="#9a6700">Host</text>
+<text x="338.2" y="154.9" fill="#d1d9e0">.......................</text>
+<text x="776.8" y="154.9" fill="#1f2328" text-anchor="end">Lenovo Legion Pro 5</text>
+<text x="287.2" y="181.3" fill="#9a6700">Editor</text>
+<text x="358.6" y="181.3" fill="#d1d9e0">..................................</text>
+<text x="776.8" y="181.3" fill="#1f2328" text-anchor="end">Neovim</text>
+<text x="287.2" y="207.6" fill="#9a6700">Languages</text>
+<text x="389.2" y="207.6" fill="#d1d9e0">.........................</text>
+<text x="776.8" y="207.6" fill="#1f2328" text-anchor="end">Python · C++</text>
+<text x="287.2" y="234.0" fill="#9a6700">Research</text>
+<text x="379.0" y="234.0" fill="#d1d9e0">................</text>
+<text x="776.8" y="234.0" fill="#1f2328" text-anchor="end">Looped / recurrent LMs</text>
+<text x="776.8" y="260.3" fill="#1f2328" text-anchor="end">Interpretability</text>
+<text x="776.8" y="286.7" fill="#1f2328" text-anchor="end">Agent learning</text>
+<text x="287.2" y="336.8" fill="#1b7c83" font-weight="600">Selected</text>
+<line x1="389.2" y1="331.0" x2="776.8" y2="331.0" stroke="#d1d9e0" stroke-width="1.5"/>
+<text x="287.2" y="363.1" fill="#9a6700">SemABI</text>
+<text x="358.6" y="363.1" fill="#d1d9e0">............</text>
+<text x="776.8" y="363.1" fill="#1f2328" text-anchor="end">Semantic interface induction</text>
+<text x="287.2" y="389.5" fill="#9a6700">OPI</text>
+<text x="328.0" y="389.5" fill="#d1d9e0">..........</text>
+<text x="776.8" y="389.5" fill="#1f2328" text-anchor="end">Proto-introspection in looped LMs</text>
+<text x="287.2" y="415.8" fill="#9a6700">Curunír</text>
+<text x="368.8" y="415.8" fill="#d1d9e0">.........</text>
+<text x="776.8" y="415.8" fill="#1f2328" text-anchor="end">Evidence-grounded intelligence</text>
+<text x="287.2" y="465.9" fill="#1b7c83" font-weight="600">Contact</text>
+<line x1="379.0" y1="460.1" x2="776.8" y2="460.1" stroke="#d1d9e0" stroke-width="1.5"/>
+<text x="287.2" y="492.2" fill="#9a6700">Email</text>
+<text x="348.4" y="492.2" fill="#d1d9e0">.......................</text>
+<text x="776.8" y="492.2" fill="#1f2328" text-anchor="end">vykos@tutamail.com</text>
+<text x="287.2" y="518.6" fill="#9a6700">GitHub</text>
+<text x="358.6" y="518.6" fill="#d1d9e0">..............................</text>
+<text x="776.8" y="518.6" fill="#1f2328" text-anchor="end">@VykosMolt</text>
+<text x="287.2" y="544.9" fill="#9a6700">LinkedIn</text>
+<text x="379.0" y="544.9" fill="#d1d9e0">.............................</text>
+<text x="776.8" y="544.9" fill="#1f2328" text-anchor="end">jan-kirin</text>
+<text x="287.2" y="571.3" fill="#9a6700">Scholar</text>
+<text x="368.8" y="571.3" fill="#d1d9e0">...........................</text>
+<text x="776.8" y="571.3" fill="#1f2328" text-anchor="end">JDFRr8sAAAAJ</text>
+<text x="287.2" y="597.6" fill="#9a6700">arXiv</text>
+<text x="348.4" y="597.6" fill="#d1d9e0">................................</text>
+<text x="776.8" y="597.6" fill="#1f2328" text-anchor="end">Jan Kirin</text>
 </svg>

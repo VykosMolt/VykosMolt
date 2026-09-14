@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Build the neofetch-style profile card SVGs.
 
-Art comes from assets/art.txt (plain ASCII, one line per row). The panel is
-laid out in character columns, so everything stays aligned whatever the art
-is. Run: python3 assets/make_card.py
+Art comes from assets/art/<name>.txt (plain ASCII, one line per row). The
+panel is laid out in character columns, so everything stays aligned whatever
+the art is.
+
+    python3 assets/make_card.py            # DEFAULT_ART
+    python3 assets/make_card.py hilbert    # pick another
 """
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -56,14 +59,17 @@ THEMES = {
 }
 
 
-def load_art():
-    p = HERE / "art.txt"
+DEFAULT_ART = "block"
+
+def load_art(name):
+    p = HERE / "art" / f"{name}.txt"
     if not p.exists():
-        return []
+        raise SystemExit(f"no such art: {p}  (have: "
+                         + ", ".join(sorted(q.stem for q in (HERE/'art').glob('*.txt'))) + ")")
     return p.read_text().rstrip("\n").split("\n")
 
 
-def check(art):
+def check(art, art_cols):
     """Fail loudly rather than emit a card with text running off the edge."""
     for row in PANEL:
         if row[0] == "k":
@@ -73,7 +79,7 @@ def check(art):
         if row[0] == "h" and len(row[1]) + 6 > COLS:
             raise SystemExit(f"header does not fit: {row[1]}")
     for i, line in enumerate(art, 1):
-        if len(line) > ART_COLS:
+        if len(line) > art_cols:
             raise SystemExit(f"art line {i} exceeds measured width")
 
 
@@ -134,14 +140,16 @@ def build(art, theme):
 
 
 if __name__ == "__main__":
-    art = load_art()
-    ART_COLS = max((len(l) for l in art), default=0)
-    check(art)
-    for name in THEMES:
-        svg, W, H, total = build(art, name)
-        (HERE / f"card-{name}.svg").write_text(svg)
+    import sys
+    name = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_ART
+    art = load_art(name)
+    art_cols = max((len(l) for l in art), default=0)
+    check(art, art_cols)
+    for theme in THEMES:
+        svg, W, H, total = build(art, theme)
+        (HERE / f"card-{theme}.svg").write_text(svg)
     px = 890 / total
-    print(f"  art      {ART_COLS} cols x {len(art)} rows")
+    print(f"  art      {name}: {art_cols} cols x {len(art)} rows")
     print(f"  panel    {COLS} cols")
     print(f"  total    {total} cols  ->  {W}x{H}px")
     print(f"  renders  ~{px:.1f}px/char in GitHub's ~890px column "
