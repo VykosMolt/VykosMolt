@@ -19,6 +19,20 @@
 
 ---
 
+## Small software projects
+
+- **€110 — fix one reproducible Python, Linux, or CI problem.** Includes the patch,
+  a check for the original failure, and clear run instructions.
+- **€220 — automate one browser workflow.** A Python/Playwright script for one
+  authorized website, up to five agreed steps, and one CSV or JSON input/output format,
+  with setup instructions and a sample run.
+
+[Email me](mailto:vykos@tutamail.com) with the error or workflow and a small example
+using dummy data. We agree the scope, access, and delivery date before work starts;
+any required subscriptions or hosting stay on your account.
+
+---
+
 ## Selected work
 
 ### [SemABI](https://github.com/VykosMolt/semabi)
