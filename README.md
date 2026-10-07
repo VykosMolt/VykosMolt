@@ -27,9 +27,11 @@
   authorized website, up to five agreed steps, and one CSV or JSON input/output format,
   with setup instructions and a sample run.
 
-[Email me](mailto:vykos@tutamail.com) with the error or workflow and a small example
-using dummy data. We agree the scope, access, and delivery date before work starts;
-any required subscriptions or hosting stay on your account.
+[Email me](mailto:vykos@tutamail.com) or
+[open a project inquiry](https://github.com/VykosMolt/VykosMolt/issues/new?title=Project%20inquiry)
+with the error or workflow and a small example using dummy data. GitHub inquiries
+are public; use email for private details. We agree the scope, access, and delivery
+date before work starts; any required subscriptions or hosting stay on your account.
 
 ---
 
