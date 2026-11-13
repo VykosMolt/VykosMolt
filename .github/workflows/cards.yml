@@ -1,0 +1,46 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  STYLE: bg_color=0d1117&border_color=30363d&border_radius=8&text_color=e6edf3&title_color=bc8cff&icon_color=bc8cff&ring_color=bc8cff
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # fail_on_error: a failed fetch must not commit a "Something went wrong" card
+      - uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&show=prs_merged&${{ env.STYLE }}
+          path: assets/stats.svg
+          token: ${{ github.token }}
+          fail_on_error: true
+
+      - uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&${{ env.STYLE }}
+          path: assets/top-langs.svg
+          token: ${{ github.token }}
+          fail_on_error: true
+
+      - run: python3 assets/make_card.py upstream
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/top-langs.svg assets/upstream.svg
+          git commit -m "Update README cards" || exit 0
+          git push

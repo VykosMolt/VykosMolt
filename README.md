@@ -1,209 +1,78 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/card-dark.svg?v=c42b13d0">
-    <img src="assets/card-light.svg?v=b2b0fb39" alt="Jan Kirin — ML researcher / SWE. Arch Linux, Hyprland, Neovim. Research: looped and recurrent language models, interpretability, agent learning. Selected work: SemABI, Operational Proto-Introspection, Curunír." width="100%">
-  </picture>
+  <img src="assets/hero.svg?v=59574f64" width="100%" alt="Jan Kirin — ML researcher / SWE. Arch Linux, KDE Plasma, Neovim. Research: looped and recurrent language models, interpretability, agent learning. Now: Operational Proto-Introspection, Reading Human Preference from loop states, Pluton.">
 </p>
 
 <p align="center">
-  <a href="mailto:vykos@tutamail.com">Email</a>
-  ·
-  <a href="https://github.com/VykosMolt">GitHub</a>
-  ·
-  <a href="https://hr.linkedin.com/in/jan-kirin-833074422">LinkedIn</a>
-  ·
-  <a href="https://scholar.google.com/citations?user=JDFRr8sAAAAJ">Google Scholar</a>
-  ·
-  <a href="https://arxiv.org/search/?query=Jan+Kirin&searchtype=author&abstracts=show&order=-announced_date_first&size=50">arXiv</a>
+  <a href="mailto:vykos@tutamail.com"><img src="assets/pill-email.svg?v=b9de3195" height="30" alt="Email"></a>
+  <a href="https://hr.linkedin.com/in/jan-kirin-833074422"><img src="assets/pill-linkedin.svg?v=8ef0c3ab" height="30" alt="LinkedIn"></a>
+  <a href="https://scholar.google.com/citations?user=JDFRr8sAAAAJ"><img src="assets/pill-scholar.svg?v=4f69e47b" height="30" alt="Google Scholar"></a>
+  <a href="https://arxiv.org/search/?query=Jan+Kirin&searchtype=author&abstracts=show&order=-announced_date_first&size=50"><img src="assets/pill-arxiv.svg?v=54fc99f0" height="30" alt="arXiv"></a>
 </p>
 
----
+<p align="center"><img src="assets/h-research.svg?v=84dcf336" width="100%" alt="Research"></p>
 
-## Small software projects
+<p align="center">Recurrent / looped language models, representation-level evaluation, interpretability, latent reasoning, agent learning, and the relationship between <strong>reading</strong> an internal representation and <strong>controlling</strong> computation through it.</p>
 
-- **€110 — fix one reproducible Python, Linux, or CI problem.** Includes the patch,
-  a check for the original failure, and clear run instructions.
-- **€220 — automate one browser workflow.** A Python/Playwright script for one
-  authorized website, up to five agreed steps, and one CSV or JSON input/output format,
-  with setup instructions and a sample run.
+<p align="center">
+  <a href="https://arxiv.org/abs/2607.18553"><img src="assets/c-opi.svg?v=d722ffde" width="412" alt="Paper: Operational Proto-Introspection in Looped Language Models, arXiv:2607.18553"></a>
+  <a href="https://github.com/VykosMolt/Branching-Looped-Transformer"><img src="assets/c-blt.svg?v=bfe8520c" width="412" alt="Code: Branching-Looped-Transformer, evaluator probes and branch-selection scaffolding for Ouro-RLTT loop states"></a>
+  <a href="https://arxiv.org/abs/2604.09870"><img src="assets/c-rpe.svg?v=951db0d7" width="412" alt="Paper: Reading Human Preference from Looped Transformer Internal States, arXiv:2604.09870"></a>
+  <a href="https://github.com/VykosMolt/Hidden-State-Evaluator"><img src="assets/c-hse.svg?v=bf3b8a8b" width="412" alt="Code: Hidden-State-Evaluator, pairwise evaluator over Ouro-2.6B-Thinking loop states"></a>
+</p>
 
-[Open a project inquiry](https://github.com/VykosMolt/VykosMolt/issues/new?title=Project%20inquiry)
-with the error or workflow and a small example using dummy data. GitHub inquiries
-are public; [email me](mailto:vykos@tutamail.com) for private details. We agree the scope, access, and delivery
-date before work starts; any required subscriptions or hosting stay on your account.
+<p align="center"><img src="assets/h-building.svg?v=33d2ef6a" width="100%" alt="Building"></p>
 
----
+<p align="center">
+  <a href="https://github.com/VykosMolt/pluton"><img src="assets/c-pluton.svg?v=b60f917f" width="828" alt="Pluton: learn French for real, a local-first PWA with FSRS, A1 to C1"></a>
+</p>
 
-## Selected work
+<p align="center"><img src="assets/h-upstream.svg?v=36029ccc" width="100%" alt="Upstream"></p>
 
-### [SemABI](https://github.com/VykosMolt/semabi)
+<p align="center">
+  <a href="https://github.com/search?q=author%3AVykosMolt+is%3Apr+is%3Amerged+-user%3AVykosMolt&type=pullrequests"><img src="assets/upstream.svg" width="100%" alt="Pull requests merged upstream, per project"></a>
+</p>
 
-**Learning what an application does by operating it.**
+<p align="center">
+  <a href="https://github.com/odysseus-dev/odysseus/pulls?q=is%3Apr+author%3AVykosMolt">odysseus</a>
+  ·
+  <a href="https://github.com/microsoft/winget-pkgs/pulls?q=is%3Apr+author%3AVykosMolt">winget-pkgs</a>
+  ·
+  <a href="https://github.com/heymrun/heym/pulls?q=is%3Apr+author%3AVykosMolt">heym</a>
+  ·
+  <a href="https://github.com/NixOS/nixpkgs/pulls?q=is%3Apr+author%3AVykosMolt">nixpkgs</a>
+  ·
+  <a href="https://github.com/peazip/PeaZip/pulls?q=is%3Apr+author%3AVykosMolt">PeaZip</a>
+  ·
+  <a href="https://github.com/anthrxc/profiler-machine/pulls?q=is%3Apr+author%3AVykosMolt">profiler-machine</a>
+</p>
 
-SemABI interacts with an unfamiliar web application through an ordinary browser and
-learns a typed relational model of what the application contains and what its controls do.
+<p align="center"><img src="assets/h-stats.svg?v=5d774e5f" width="100%" alt="Stats"></p>
 
-No source. No API. No schema. No documentation. No demonstrations. No predefined action
-vocabulary. The learner itself uses no language model.
+<p align="center">
+  <img src="assets/stats.svg" width="473" alt="GitHub stats">
+  <img src="assets/top-langs.svg" width="351" alt="Most used languages">
+</p>
 
-It is an attempt to answer a simple but nontrivial question:
+<p align="center"><img src="assets/h-archive.svg?v=ad7362a3" width="100%" alt="Archive"></p>
 
-> Can an agent recover the semantics of an unfamiliar application purely by interacting
-> with its interface?
+<details>
+<summary><strong>13 finished or parked projects</strong></summary>
 
----
+<br>
 
-### [Operational Proto-Introspection](https://arxiv.org/abs/2607.18553) · [code](https://github.com/VykosMolt/Branching-Looped-Transformer)
-
-Research into what looped language models know about the quality of their own ongoing
-computation, where those signals become readable, and whether an external intervention
-can actually turn that readout into better outcomes.
-
-The work spans hidden-state process-quality taps, executable branching over recurrent
-states, recurrence-depth analysis, cross-model replication, and the boundary between
-**readable internal information** and **usable control**.
-
----
-
-### [Curunír](https://github.com/VykosMolt/Curunir)
-
-An intelligence workbench that will not let a conclusion outrun its evidence.
-
-Curunír is built around explicit provenance, inspectable claims, reproducible evidence,
-and adversarial review rather than treating an agent's final answer as the artifact.
-
----
-
-### [Lifetime Meta-Learning](https://github.com/VykosMolt/Lifetime-Meta-Learning)
-
-Experiments on whether recurrent representations are causally **writable**, rather than
-merely readable.
-
-The broader question is whether computation can be useful not only because it improves
-the current answer, but because it improves what the model is able to learn afterwards.
-
----
-
-### [looped-wiki](https://github.com/VykosMolt/looped-wiki)
-
-An agent-first index of the literature around recurrent and looped models.
-
-The basic unit is a **claim instance**, not a paper: findings, mechanisms, evidence,
-relationships, and limitations are represented separately so agents can reason across
-the literature rather than merely retrieve documents.
-
----
-
-## Research
-
-My main interests are recurrent / looped language models, representation-level
-evaluation, interpretability, latent reasoning, agent learning, and the relationship
-between **reading** an internal representation and **controlling** computation through it.
-
-### Papers
-
-**[Operational Proto-Introspection in Looped Language Models](https://arxiv.org/abs/2607.18553)**  
-Process-quality taps, executable branching, recurrence-depth analysis, and the
-readout–control boundary.
-
-**[Relational Preference Encoding in Looped Transformer Internal States](https://arxiv.org/abs/2604.09870)**  
-Earlier work on relational signals in Ouro's recurrent states. The associated repository
-contains the correction record and subsequent evaluator work.
-
-### Research code
-
-| Project | What it is |
+| Project | What it was |
 |---|---|
-| **[Branching-Looped-Transformer](https://github.com/VykosMolt/Branching-Looped-Transformer)** | Experimental substrate behind Operational Proto-Introspection: hidden-state probes, branch/carry/prune machinery, control experiments, and recurrent-depth analysis. |
-| **[Hidden-State-Evaluator](https://github.com/VykosMolt/Hidden-State-Evaluator)** | Pairwise evaluator experiments over internal states of Ouro-2.6B-Thinking, including the correction trail for the original preference-evaluation result. |
-| **[JLens-Ouro](https://github.com/VykosMolt/JLens-Ouro)** | Jacobian-lens experiments against the raw logit lens inside a recurrent loop. |
-| **[One-Concept-Multiple-Geometries](https://github.com/VykosMolt/One-Concept-Multiple-Geometries)** | Tests how different corpus operators recover different geometries from the same underlying concept. |
+| **[SemABI](https://github.com/VykosMolt/semabi)** | Semantic interface induction: learning what an application does by operating it through a browser, with no source, API, schema or docs. |
+| **[Curunír](https://github.com/VykosMolt/Curunir)** | An intelligence workbench that will not let a conclusion outrun its evidence. |
 | **[Lifetime-Meta-Learning](https://github.com/VykosMolt/Lifetime-Meta-Learning)** | Experiments on writable recurrent representations and learning-time credit. |
 | **[looped-wiki](https://github.com/VykosMolt/looped-wiki)** | Structured literature index for looped / recurrent models, organized around claims rather than documents. |
-
----
-
-## Other projects
-
-<details>
-<summary><strong>Systems & desktop</strong></summary>
-
-<br>
-
-| Project | What it is |
-|---|---|
-| **[Curunír](https://github.com/VykosMolt/Curunir)** | Evidence-grounded intelligence and research workbench. |
+| **[JLens-Ouro](https://github.com/VykosMolt/JLens-Ouro)** | Jacobian-lens experiments against the raw logit lens inside a recurrent loop. |
+| **[One-Concept-Multiple-Geometries](https://github.com/VykosMolt/One-Concept-Multiple-Geometries)** | Tests how different corpus operators recover different geometries from the same underlying concept. |
 | **[omarchy-desktop](https://github.com/VykosMolt/omarchy-desktop)** | The Omarchy Quattro desktop reconstructed as an ordinary Arch Linux session. |
 | **[walltone](https://github.com/VykosMolt/walltone)** | Rotates a wallpaper and restyles Kitty from the same image. |
-
-</details>
-
-<details>
-<summary><strong>Things to read or play</strong></summary>
-
-<br>
-
-| Project | What it is |
-|---|---|
 | **[Glasshouse](https://github.com/VykosMolt/Glasshouse)** | Two offline browser mysteries at Bellwether Conservatory, 1932. Python, no dependencies, no network. |
 | **[picture-books](https://github.com/VykosMolt/picture-books)** | Interactive technical picture books: *Hidden States*, *Free Fall*, and *The Red Thread*. |
 | **[Ink-Handwritting-Studio](https://github.com/VykosMolt/Ink-Handwritting-Studio)** | A handwriting generator built to handle real documents. |
+| **[Hunter-Seeker-v2](https://github.com/VykosMolt/Hunter-Seeker-v2)** · **[v1](https://github.com/VykosMolt/Hunter-Seeker-v1)** | Transactional non-LLM ARC-AGI-3 agent: the compact rebuild, and the earlier Stockfish-style nineteen-mixin stack. |
 
 </details>
-
----
-
-## Open source
-
-I also contribute patches upstream rather than keeping every change in a standalone
-project.
-
-Forks retained primarily to carry contributions:
-
-[nixpkgs](https://github.com/VykosMolt/nixpkgs)
-·
-[archinstall](https://github.com/VykosMolt/archinstall)
-·
-[winget-pkgs](https://github.com/VykosMolt/winget-pkgs)
-·
-[cline](https://github.com/VykosMolt/cline)
-·
-[odysseus](https://github.com/VykosMolt/odysseus)
-·
-[omarchy](https://github.com/VykosMolt/omarchy)
-
-tsCircuit:
-[core](https://github.com/VykosMolt/core)
-·
-[circuit-json](https://github.com/VykosMolt/circuit-json)
-·
-[circuit-json-to-kicad](https://github.com/VykosMolt/circuit-json-to-kicad)
-
----
-
-<details>
-<summary><strong>Retired / archived work</strong></summary>
-
-<br>
-
-**[Hunter-Seeker-v2](https://github.com/VykosMolt/Hunter-Seeker-v2)**  
-Transactional non-LLM ARC-AGI-3 agent; the compact post-erratum rebuild.
-
-**[Hunter-Seeker-v1](https://github.com/VykosMolt/Hunter-Seeker-v1)**  
-The earlier Stockfish-style implementation with its nineteen-mixin stack.
-
-</details>
-
----
-
-<p align="center">
-  <a href="mailto:vykos@tutamail.com">vykos@tutamail.com</a>
-  ·
-  <a href="https://github.com/VykosMolt">GitHub</a>
-  ·
-  <a href="https://hr.linkedin.com/in/jan-kirin-833074422">LinkedIn</a>
-  ·
-  <a href="https://scholar.google.com/citations?user=JDFRr8sAAAAJ">Scholar</a>
-  ·
-  <a href="https://arxiv.org/search/?query=Jan+Kirin&searchtype=author&abstracts=show&order=-announced_date_first&size=50">arXiv</a>
-</p>
