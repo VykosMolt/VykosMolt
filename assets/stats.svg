@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Vykos&#39; GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 14, Total Commits  (last year) : 1211, Total PRs: 144, Total PRs Merged: 84, Total Issues: 19, Contributed to (last year): 16</desc>
+        <desc id="descId">Total Stars Earned: 14, Total Commits  (last year) : 1214, Total PRs: 144, Total PRs Merged: 84, Total Issues: 19, Contributed to (last year): 16</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 116.51181483142388;
+        stroke-dashoffset: 116.499733881355;
       }
     }
   
